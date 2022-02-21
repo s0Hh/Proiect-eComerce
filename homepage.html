@@ -1,7 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="E:\css\git-github-practice-exercises\Web-vanzari/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap"
       rel="stylesheet"
@@ -14,18 +14,19 @@
       rel="icon"
       type="image/x-icon"
     />
+    <script src="products.js" defer></script>  
   </head>
 
-  <body>
+  <body onLoad="init()">
     <div class="hero-image">
       <div class="hero-text">
         <h1 style="font-size: 100px;" id="title">ia masina</h1>
       </div>
     </div>
     <div class="sidenav">
-      <a href="https://xxxd5.csb.app/homepage.html">Home</a>
-      <a href="https://xxxd5.csb.app/register.html">Register</a>
-      <a href="#clients">SignUP</a>
+      <a href="./homepage.html">Home</a>
+      <a href="./register.html">Register</a>
+      <a href="./login.html">SignUP</a>
       <a href="#contact">Contact</a>
     </div>
     <div id="body-container">
@@ -55,10 +56,7 @@
         </p>
       </article>
 
-      <div class="anunturi">
-        <div class="anunt1">1</div>
-        <div class="anunt1">2</div>
-        <div class="anunt1">3</div>
+      <div id="articles-container">
       </div>
 
       <article>
@@ -77,6 +75,53 @@
           2018.
         </p>
       </article>
+    
+    
+
+      <section class="filters">
+        <ul id="applied-filters"></ul>
+        <select id="filter-marca">
+          <option value="">Alege o marca</option>
+        </select>
+        <select id="filter-an">
+          <option value="">Alege un an</option>
+        </select>
+      </section>
+      <section class="products">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Marca</th>
+              <th>Model</th>
+              <th>Pret</th>
+              <th>An</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    
+    
     </div>
+
+    <!-- import data from"E:\css\git-github-practice-exercises\Web-vanzari\data.json";
+    console.log(data[0]); -->
+
+    
   </body>
+
+  <footer >
+      <nav>
+        <ul>
+          <li><a href="default.asp" target="_blank">About us</a></li>
+          <li><a href="default.asp" target="_blank">Term ofuse</a></li>
+          <li><a href="default.asp" target="_blank">Cookie policies</a></li>
+        </ul>
+      </nav>
+  </footer>
+
+
+
+  
 </html>
